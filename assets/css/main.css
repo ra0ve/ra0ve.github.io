@@ -2167,6 +2167,37 @@ input, select, textarea {
 				transition-delay: 3s;
 			}
 
+/* Experience and Research Section Hover Effect */
+
+	#two ul, #three ul {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.4s ease;
+	}
+
+	#two:hover ul, #three:hover ul {
+		max-height: 500px;
+	}
+
+/* Projects Section Hover Effect */
+
+	.features section h3,
+	.features section p {
+		transition: opacity 0.3s ease;
+	}
+
+	.features section .hidden-text {
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: opacity 0.3s ease, max-height 0.3s ease;
+	}
+
+	.features section:hover .hidden-text {
+		opacity: 1;
+		max-height: 500px;
+	}
+
 		.features.inactive section .icon {
 			-moz-transform: scale(0.5);
 			-webkit-transform: scale(0.5);
