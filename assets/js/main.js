@@ -184,6 +184,11 @@
 					// Activate section.
 						$(this).removeClass('inactive');
 
+					// Reveal hidden text on mobile
+					if (breakpoints.active('<=small')) {
+						$(this).find('ul.hidden-text').removeClass('hidden-text');
+					}
+
 				}
 			});
 
