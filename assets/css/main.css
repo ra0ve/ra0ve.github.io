@@ -2189,6 +2189,8 @@ input, select, textarea {
 	.features section .hidden-text {
 		opacity: 0;
 		max-height: 0;
+		width: 130%;
+		margin-left: -25%;
 		overflow: hidden;
 		transition: opacity 0.3s ease, max-height 0.3s ease;
 	}
