@@ -2181,6 +2181,19 @@ input, select, textarea {
 
 /* Projects Section Hover Effect */
 
+	section .hidden-text {
+		opacity: 0;
+		max-height: 0;
+		/* background-color: #00000015; */
+		overflow: hidden;
+		transition: opacity 0.3s ease, max-height 0.3s ease;
+	}
+
+	section:hover .hidden-text {
+		opacity: 1;
+		max-height: 1500px;
+	}
+
 	.features section h3,
 	.features section p {
 		transition: opacity 0.3s ease;
